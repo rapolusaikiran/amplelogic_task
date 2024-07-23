@@ -1,0 +1,226 @@
+.brand-color {
+  color:#1e88e5;
+}
+.brand-bgcolor {
+  background-color: #1e88e5;
+}
+header.main_header {
+  border-bottom: 2px solid #ededf4;
+}
+.main_header .header_left {
+
+}
+.main_header .header_left .logo {
+
+}
+.main_header .header_left .header_menu {
+  
+}
+.main_header .header_left .header_menu .btn-group .btn{
+  font-weight: 600;
+  padding-right: 2rem;
+}
+.main_header .header_left .header_menu .btn-group .btn.show{
+  border-color: transparent;
+}
+.main_header .header_left .header_menu .btn-group .btn-primary{
+  padding: 8px 10px;
+  background-color: #1e88e5;
+  margin-right: .5rem;
+  font-weight: 600;
+}
+.main_header .header_right .country img,
+.main_header .header_right .userprofile ,
+.main_header .header_right .userprofile img {
+  border-radius: 50%;
+}
+.main_header .header_right .notification .fa-bell {
+  font-size: 26px;
+}
+.main_header .header_right .notification {
+  position: relative;
+}
+.main_header .header_right .notification i{
+  color: #d1d2d5;
+}
+.main_header .header_right .notification i::after {
+  content: "";
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #ed1515;
+  position: absolute;
+  right: 1px;
+  top: 4px;
+  outline: 2px solid white;
+}
+.main_header .header_right .notification .span {
+  border-radius: 50%;
+  padding:2px;
+  background-color: red;
+}
+.main_header .header_right .userprofile {
+  border: 2px solid #ccc;
+  padding: 2px;
+}
+.main_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.main_page button#start-button {
+  padding: .5rem 3.5rem;
+  border-radius: 4px;
+}
+.main_footer {
+  font-size: 14px;
+  border-top: 1px solid #d1d2d5;
+}
+
+.main_header .dropdown-toggle::after {
+  display: none;
+}
+.main_header .dropdown-toggle {
+  position: relative;
+}
+.main_header .dropdown-toggle::before {
+  content: '\f107'; 
+  font-family: 'FontAwesome'; 
+  position: absolute;
+  right: 0.5rem;
+}
+.main_header .dropdown-toggle.show::before {
+  content: '\f106'; 
+}
+.main_header .dropdown-menu.show {
+  display: block;
+}
+.main_header .dropdown-menu {
+  position: relative;
+}
+.main_header .dropdown-menu.show::before {
+  display: block;
+}
+.fixed-bottom {
+  z-index: 0 !important;
+}
+#popupDiv .offcanvas {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+#popupDiv .offcanvas.offcanvas-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+  padding: 0px;
+}
+#popupDiv .offcanvas-leftdesign {
+  width: 100px;
+  justify-content: center;
+  display: flex;
+  background-color: #1e88e5;
+  height: 100px;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+#popupDiv .offcanvas-leftdesign span{
+  position: absolute;
+  border-right: 40px solid #1e88e5;
+  border-top: 40px solid transparent;
+  right: -4px;
+  rotate: -30deg;
+  transform: scale(-1, 2);
+  bottom: 50px;
+}
+#popupDiv .offcanvas-leftdesign i {
+  rotate: -44deg;
+  font-size: 40px;
+}
+#popupDiv .offcanvas-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+}
+#popupDiv .offcanvas-header {
+  padding: 0px;
+}
+#popupDiv .offcanvas-title {
+  margin-bottom: 0;
+}
+#popupDiv .offcanvas-body {
+  padding: 0px;
+}
+#popupDiv .progress {
+  height: 10px;
+  margin-bottom: 10px;
+  background: lightgrey;
+}
+#popupDiv .progress-bar {
+  background-color: #1e88e5;
+}
+#alert-container {
+  border-bottom: 2px solid #127112;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 292px;
+  padding: 10px;
+  background-color: #51a351;
+  color: #fff;
+  text-align: center;
+  display: none;
+  border-radius: 5px;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  font-size: 14px;
+}
+#alert-container .fa-solid.fa-xmark {
+  cursor: pointer;
+}
+.percentage-display {
+  font-size: 18px;
+  margin-top: 10px;
+}
+#alert-container .checkmark i {
+  font-size: 30px;
+}
+.hidden {
+  display: none;
+}
+.popup {
+  position: fixed;
+  right: 5px;
+  bottom: 98.17px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  z-index: 1;
+}
+#popupContent:has(.offcanvas.offcanvas-bottom) ~ #toggleButton {
+  display: none;
+}
+#popupContent:has(.offcanvas.offcanvas-bottom.show) ~ #toggleButton {
+  display: block;
+}
+.popup:has(.selection.hidden){
+  bottom: 1px;
+  z-index: 1;
+}
+.selection.hidden ~ #toggleButton {
+  rotate: 180deg;
+  border-radius:0 0 3px 3px;
+  padding: 0 1.5rem;
+}
+.selection ~ #toggleButton {
+  border-radius:3px 3px 0 0;
+  padding: 0 1.5rem;
+}

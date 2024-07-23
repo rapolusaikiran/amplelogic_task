@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>amplelogic</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header class="main_header d-flex justify-content-between align-items-center px-4">
+    <div class="header_left d-flex justify-content-left align-items-center">
+      <div class="logo px-4">
+        <img src="amplelogic.jpg" height="80px">
+      </div>
+      <div class="header_menu">
+        <div class="btn-group">
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle d-flex justify-content-center align-items-center" data-bs-toggle="dropdown"><i class="btn btn-primary fa-solid fa-user"></i>Organization Structure</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle d-flex justify-content-center align-items-center" data-bs-toggle="dropdown"><i class="btn btn-primary fa-regular fa-square"></i>Configuration</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle d-flex justify-content-center align-items-center" data-bs-toggle="dropdown"><i class="btn btn-primary fa-regular fa-file"></i>Reports</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle d-flex justify-content-center align-items-center" data-bs-toggle="dropdown"><i class="btn btn-primary fa-solid fa-gears"></i>ETL</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Link 1</a></li>
+              <li><a class="dropdown-item" href="#">Link 2</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    <div class="header_right d-flex justify-content-right align-items-center gap-3">
+      <div class="country d-flex align-items-center">
+        <img src="country.jpg" height="20px">
+      </div>
+      <div class="notification d-flex align-items-center">
+        <i class="fa-regular fa-bell"></i>
+      </div>
+      <div class="userprofile d-flex align-items-center">
+        <img src="profile_user.jpg" height="40px">
+      </div>
+    </div>
+  </header>
+
+<div class="main_page">
+  <button class="btn btn-primary start_btn brand-bgcolor text-white" id="start-button"><b>Start</b></button>
+</div>
+
+<div id="popupDiv" class="popup">
+ 
+  <div id="popupContent" class="selection">
+
+      <div class="offcanvas offcanvas-bottom" id="migration-offcanvas">
+        <div class="offcanvas-leftdesign">
+          <i class="fa-solid fa-rocket"></i>
+          <span></span>
+        </div>
+        <div class="offcanvas-content">
+          <div class="offcanvas-header">
+            <h6 class="offcanvas-title" id="offcanvas-title">Migrating Data to selected environment</h6>
+            <div class="d-flex align-items-center">
+              <div id="progress-status"><b>0%</b></div>
+              <button class="btn btn-sm btn-secondary d-none" id="toggle-button">
+                <i class="fas fa-chevron-up" id="toggle-icon"></i>
+              </button>
+            </div>     
+          </div>
+          <div class="offcanvas-body">
+            <div class="progress">
+              <div class="progress-bar progress-bar-animated" id="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+  <button id="toggleButton" class="btn btn-primary brand-bgcolor"><i class="fa-solid fa-caret-down" id="toggle-icon"></i></button>
+</div>
+
+<div id="alert-container"></div>
+
+<footer class="main_footer footer fixed-bottom d-flex justify-content-between align-items-center px-3">
+  <img src="amplelogic.jpg" height="40px">
+  <div class="text-muted">copyright &copy; 2010-2023 Amplelogic | All Rights Reserved.</div>
+  <div class="text-muted">v3.1.0</div>
+</footer>
+<script src='script.js'></script>
+
+</body>
+</html>
